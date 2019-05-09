@@ -31,8 +31,8 @@
                     @csrf
 
                         <h5 class="font-weight-bold mt-1">Log in to your account</h5>
-                        <br>
-                        <span><a href="{{ route('auth.social',['provider'=>'google']) }}">login with gmail</a></span>
+                        <!-- <br>
+                        <span><a href="{{ route('auth.social',['provider'=>'google']) }}">login with gmail</a></span> -->
                     <div class="form-group row">
 
                         <div class="col-md-12">
@@ -78,10 +78,13 @@
                         </p>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <a href="{{ url('/login/facebook') }}" class="btn btn-facebook col-md-6" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                                <div class="col-md-6 pull-left">
+                                <a href="{{ url('/login/facebook') }}" class=" btn-facebook " class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                            </div>
 
-                                <a href="{{ url('/login/google') }}"  class="btn btn-google col-md-6"><i class="fa fa-google"></i> Google</a>
-
+                            <div class="col-md-6 pull-left">
+                                <a href="{{ url('/login/google') }}"  class="btn-google "><i class="fa fa-google"></i> Google</a>
+                            </div>
 
                             </div>
 
